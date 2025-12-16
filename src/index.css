@@ -1,1 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
+@import "@kevinjosec/typekit/style.css";
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.02em;
+    scroll-behavior: smooth;
+  }
+}
