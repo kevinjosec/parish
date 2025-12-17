@@ -11,20 +11,20 @@ export default function Home() {
       <div>
         <NavbarComponent />
       </div>
-      <div className="h-screen">
+      <div>
         <AboutComponent />
       </div>
-      <div className="h-screen">
+      <div>
         <LocationsComponent />
       </div>
-      <div className="h-screen">
-        <TimingComponent/>
-      </div>
-      <div className="h-screen">
-        <CommitteeComponent/>
+      <div>
+        <TimingComponent />
       </div>
       <div>
-        <FooterComponent/>
+        <CommitteeComponent />
+      </div>
+      <div>
+        <FooterComponent />
       </div>
     </div>
   );

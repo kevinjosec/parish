@@ -3,37 +3,53 @@ import { serviceSchedule } from "../constants";
 
 export default function TimingComponent() {
   return (
-    <div className="overflow-x-auto p-4 flex flex-col gap-4">
+    <div className="p-4 flex flex-col gap-8">
+      {/* Page Title */}
       <Heading children="Service Schedule" />
-      <table className="w-full border-collapse rounded-xl overflow-hidden">
-        <thead className="bg-gray-100">
-          <tr>
-            <th className="p-4 text-left">Day</th>
-            <th className="p-4 text-left">Location</th>
-            <th className="p-4 text-left">Service</th>
-            <th className="p-4 text-left">Time</th>
-          </tr>
-        </thead>
 
-        <tbody>
-          {serviceSchedule.map((day, dayIndex) =>
-            day.services.map((service, serviceIndex) => (
-              <tr
-                key={`${dayIndex}-${serviceIndex}`}
-                className="border-b last:border-none"
+      {/* Day Cards */}
+      {serviceSchedule.map((day, dayIndex) => (
+        <div
+          key={dayIndex}
+          className="rounded-2xl border border-white/10 bg-white/5 p-6 flex flex-col gap-4"
+        >
+          {/* Day Heading */}
+          <Heading children={day.day} size="xl" />
+
+          {/* Services */}
+          <div className="flex  text-center flex-col gap-3">
+            {day.services.map((service, serviceIndex) => (
+              <div
+                key={serviceIndex}
+                className="
+                  rounded-xl
+                  bg-white/10
+                  p-4
+                  flex
+                  flex-col
+                  sm:flex-row
+                  sm:items-center
+                  sm:justify-between
+                  gap-2
+                  hover:bg-white/15
+                  transition
+                "
               >
-                {/* Show day only once per group */}
-                <td className="p-4 font-medium">
-                  {serviceIndex === 0 ? day.day : ""}
-                </td>
-                <td className="p-4">{service.location}</td>
-                <td className="p-4">{service.type}</td>
-                <td className="p-4">{service.time}</td>
-              </tr>
-            ))
-          )}
-        </tbody>
-      </table>
+                {/* Service Info */}
+                <div className="flex flex-col gap-1">
+                  <div className="font-medium">{service.type}</div>
+                  <div className="text-sm opacity-70">{service.location}</div>
+                </div>
+
+                {/* Time */}
+                <div className="font-semibold whitespace-nowrap">
+                  {service.time}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
