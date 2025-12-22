@@ -1,17 +1,19 @@
 import { Heading, Paragraph, Subheading } from "@kevinjosec/typekit";
 import LogoComponent from "./Logo.component";
 import { contacts, tabs } from "../constants";
+import { useNavigate } from "react-router-dom";
 
 export default function FooterComponent() {
+  const navigate = useNavigate();
   return (
     <div className="p-4 bg-black text-white">
-      <div className="md:grid grid-cols-4 py-8 flex flex-col gap-4">
+      <div className="md:grid md:grid-cols-4 py-8 sm:flex sm:flex-col gap-10">
         <div className="col-span-1">
           <LogoComponent />
         </div>
-        <div className="col-span-2 flex flex-row justify-center">
+        <div className="md:col-span-2 flex flex-row justify-center">
           {tabs.map((tab) => (
-            <div key={tab.id}>
+            <div key={tab.id} onClick={() => navigate(tab.route)}>
               <Paragraph
                 children={tab.tab}
                 size="md"

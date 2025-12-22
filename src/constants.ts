@@ -2,32 +2,32 @@ export const tabs = [
   {
     id: "1",
     tab: "Home",
-    route: "",
+    route: "/",
   },
   {
     id: "2",
     tab: "About",
-    route: "",
+    route: "/about",
   },
   {
     id: "3",
-    tab: "Committe",
-    route: "",
+    tab: "Committee",
+    route: "/committee",
   },
   {
     id: "4",
     tab: "Events",
-    route: "",
+    route: "/events",
   },
   {
     id: "5",
     tab: "Resources",
-    route: "",
+    route: "/resources",
   },
   {
     id: "6",
     tab: "Contact",
-    route: "",
+    route: "/contact",
   },
 ];
 
@@ -109,4 +109,3 @@ export const ABOUT_FOOTER = {
   title: "Looking Forward",
   text: `As the parish continues to grow, St. Mary’s Jacobite Syrian Church remains committed to serving the spiritual needs of the faithful in Kuwait, preserving Orthodox traditions, and responding to the challenges of modern life with faith, compassion, and hope in Christ.`,
 };
-

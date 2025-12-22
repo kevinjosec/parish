@@ -4,9 +4,11 @@ import LogoComponent from "./Logo.component";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import MenuComponent from "./Menu.component";
+import { useNavigate } from "react-router-dom";
 
 export default function NavbarComponent() {
   const [openMenu, setOpenMenu] = useState(false);
+  const navigate = useNavigate();
   const handleMenu = () => {
     setOpenMenu(!openMenu);
   };
@@ -15,7 +17,7 @@ export default function NavbarComponent() {
       <LogoComponent />
       <div className="hidden md:flex flex-row items-start gap-6">
         {tabs.map((tab) => (
-          <div key={tab.id}>
+          <div key={tab.id} onClick={() => navigate(tab.route)}>
             <Label
               children={tab.tab}
               size="sm"
