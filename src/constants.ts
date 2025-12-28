@@ -39,9 +39,32 @@ export const resources = [];
 
 export const events = [];
 
-export const ORGANIZATION_NAME = "";
+export const ORGANIZATION_NAME = "St. Mary's Jacobite Syrian Church";
 
-export const COMMITTEE_MEMBERS = [];
+export const COMMITTEE = {
+  YOUTH_ASSOSCIATION: {
+    NAME: "St. Mary's Jacobite Syrian Youth Association",
+    DESC: "Setting the strategic vision and steering the organization towards future growth.",
+    PRESIDENT: "Mr. John Doe",
+    VICE_PRESIDENT: "Mr. Richard Roe",
+    SECRETARY: "Ms. Jane Smith",
+    TREASURER: "Mr. Alan Smithee",
+    MEMBERS: ["Ms. Emily Davis", "Mr. Michael Brown", "Ms. Sarah Wilson"],
+  },
+  VANITHA_SANGHAM: {
+    NAME: "St. Mary's Jacobite Syrian Vanitha Sangham",
+    DESC: "Setting the strategic vision and steering the organization towards future growth.",
+    PRESIDENT: "Ms. Anna Johnson",
+    VICE_PRESIDENT: "Ms. Laura Garcia",
+    SECRETARY: "Ms. Maria Martinez",
+    TREASURER: "Ms. Linda Rodriguez",
+    MEMBERS: [
+      "Ms. Barbara Hernandez",
+      "Ms. Elizabeth Lopez",
+      "Ms. Jennifer Gonzalez",
+    ],
+  },
+};
 
 export const contacts = [
   {
