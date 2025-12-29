@@ -5,7 +5,7 @@ import { COMMITTEE } from "../constants";
 
 export default function Committee() {
   // Animations
-  const fadeInUp = {
+  /* const fadeInUp = {
     hidden: {
       opacity: 0,
       y: 40,
@@ -18,7 +18,7 @@ export default function Committee() {
         ease: cubicBezier(0.22, 1, 0.36, 1),
       },
     },
-  };
+  }; */
   const staggerContainer = {
     hidden: {
       opacity: 0,
