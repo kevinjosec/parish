@@ -45,67 +45,65 @@ export default function About() {
   return (
     <div>
       <NavbarComponent />
-      <section className="min-h-screen flex flex-col justify-between px-6">
-        <div className="flex-1 flex flex-col justify-center">
-          <div className="overflow-hidden">
-            <motion.h1
-              initial="hidden"
-              animate="visible"
-              variants={staggerContainer}
-              className="tracking-tighter leading-[0.85] uppercase"
-            >
-              <div className="overflow-hidden">
-                <motion.div variants={lineReveal}>
-                  <Heading
-                    children="St Marys's"
-                    //@ts-ignore
-                    size=""
-                    className="text-6xl md:text-8xl font-black"
-                  />
-                </motion.div>
-              </div>
-              <div className="overflow-hidden">
-                <motion.div variants={lineReveal}>
-                  <Heading
-                    children="Jacobite"
-                    //@ts-ignore
-                    size=""
-                    className="text-6xl md:text-8xl font-black"
-                  />
-                </motion.div>
-              </div>
-              <div className="overflow-hidden">
-                <motion.div variants={lineReveal} className="">
-                  <Heading
-                    children="Syrian"
-                    //@ts-ignore
-                    size=""
-                    className="text-6xl md:text-8xl text-[#0066FF]"
-                  />
-                </motion.div>
-              </div>
-              <div className="overflow-hidden">
-                <motion.div variants={lineReveal}>
-                  <Heading
-                    children="Orthodox"
-                    //@ts-ignore
-                    size=""
-                    className="text-6xl md:text-8xl font-black"
-                  />
-                </motion.div>
-              </div>
-              <div className="overflow-hidden">
-                <motion.div variants={lineReveal}>
-                  <Heading
-                    children="Church"
-                    //@ts-ignore
-                    size=""
-                    className="text-6xl md:text-8xl font-black"
-                  />
-                </motion.div>
-              </div>
-            </motion.h1>
-          </div>
+      <div className="p-4 min-h-screen flex flex-col justify-center">
+        <div className="overflow-hidden">
+          <motion.h1
+            initial="hidden"
+            animate="visible"
+            variants={staggerContainer}
+            className="tracking-tighter leading-[0.85] uppercase"
+          >
+            <div className="overflow-hidden">
+              <motion.div variants={lineReveal}>
+                <Heading
+                  children="St Marys's"
+                  //@ts-ignore
+                  size=""
+                  className="text-6xl md:text-8xl font-black"
+                />
+              </motion.div>
+            </div>
+            <div className="overflow-hidden">
+              <motion.div variants={lineReveal}>
+                <Heading
+                  children="Jacobite"
+                  //@ts-ignore
+                  size=""
+                  className="text-6xl md:text-8xl font-black"
+                />
+              </motion.div>
+            </div>
+            <div className="overflow-hidden">
+              <motion.div variants={lineReveal} className="">
+                <Heading
+                  children="Syrian"
+                  //@ts-ignore
+                  size=""
+                  className="text-6xl md:text-8xl text-[#0066FF]"
+                />
+              </motion.div>
+            </div>
+            <div className="overflow-hidden">
+              <motion.div variants={lineReveal}>
+                <Heading
+                  children="Orthodox"
+                  //@ts-ignore
+                  size=""
+                  className="text-6xl md:text-8xl font-black"
+                />
+              </motion.div>
+            </div>
+            <div className="overflow-hidden">
+              <motion.div variants={lineReveal}>
+                <Heading
+                  children="Church"
+                  //@ts-ignore
+                  size=""
+                  className="text-6xl md:text-8xl font-black"
+                />
+              </motion.div>
+            </div>
+          </motion.h1>
         </div>
 
         {/* <motion.div
@@ -127,7 +125,7 @@ export default function About() {
           </p>
           <ArrowDownRight className="w-8 h-8 md:w-12 md:h-12 text-[#0066FF]" />
         </motion.div> */}
-      </section>
+      </div>
 
       <section className="p-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">

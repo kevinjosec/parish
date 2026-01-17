@@ -31,8 +31,8 @@ export default function AboutComponent() {
     },
   };
   return (
-    <div className="p-6 flex flex-col justify-center gap-6">
-      <div className="flex flex-col justify-center">
+    <div className="p-4 flex flex-col justify-center">
+      <div className="min-h-screen flex flex-col ">
         <div className="overflow-hidden mb-12">
           <motion.h1
             initial="hidden"
@@ -98,6 +98,7 @@ export default function AboutComponent() {
           </div>
         </motion.div>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {ABOUT_CONTENT.map(({ title, text }) => (
           <div
