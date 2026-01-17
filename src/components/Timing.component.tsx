@@ -1,4 +1,4 @@
-import { Heading, Subtitle } from "@kevinjosec/typekit";
+import { Heading, Paragraph } from "@kevinjosec/typekit";
 import { SERVICES } from "../constants";
 import { Calendar, Clock } from "lucide-react";
 
@@ -19,14 +19,14 @@ export default function TimingComponent() {
               <Calendar color="#0066FF" />
               <div className="flex flex-col gap-4">
                 <Heading children={services.day} size="2xl" />
-                <Subtitle
-                  children={`${services.day} at ${services.location} ${services.type}`}
+                <Paragraph
+                  children={`${services.type} | ${services.location} `}
                 />
               </div>
             </div>
             <div className="flex flex-row items-center gap-2">
-              <Clock color="gray" />
-              <Subtitle children={services.time} />
+              <Clock color="gray" size={20} />
+              <Paragraph children={services.time} />
             </div>
           </div>
         ))}

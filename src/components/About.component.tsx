@@ -2,8 +2,10 @@ import { Heading, Paragraph } from "@kevinjosec/typekit";
 import { ABOUT_CONTENT, ABOUT_FOOTER, ROUTES } from "../constants";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function AboutComponent() {
+  const navigate = useNavigate();
   const staggerContainer = {
     hidden: {
       opacity: 0,
@@ -87,13 +89,13 @@ export default function AboutComponent() {
           }}
           className="mt-12"
         >
-          <a
-            href={ROUTES.ABOUT}
+          <div
+            onClick={() => navigate(ROUTES.ABOUT)}
             className="inline-flex items-center gap-3 text-lg font-bold uppercase tracking-widest hover:text-[#0066FF] transition-colors group"
           >
             Explore
             <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
-          </a>
+          </div>
         </motion.div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
