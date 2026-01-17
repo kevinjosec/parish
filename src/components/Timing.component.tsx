@@ -1,55 +1,36 @@
-import { Heading } from "@kevinjosec/typekit";
-import { serviceSchedule } from "../constants";
+import { Heading, Subtitle } from "@kevinjosec/typekit";
+import { SERVICES } from "../constants";
+import { Calendar, Clock } from "lucide-react";
 
 export default function TimingComponent() {
   return (
-    <div className="p-4 flex flex-col gap-8">
-      {/* Page Title */}
-      <Heading children="Service Schedule" />
+    <div className="p-4 md:flex md:flex-row">
+      <div className="md:w-1/3 md:flex md:justify-center">
+        <Heading children="Service Schedule" />
+      </div>
 
-      {/* Day Cards */}
-      {serviceSchedule.map((day, dayIndex) => (
-        <div
-          key={dayIndex}
-          className="rounded-2xl border border-white/10 bg-white/5 p-6 flex flex-col gap-4"
-        >
-          {/* Day Heading */}
-          <Heading children={day.day} size="xl" />
-
-          {/* Services */}
-          <div className="flex  text-center flex-col gap-3">
-            {day.services.map((service, serviceIndex) => (
-              <div
-                key={serviceIndex}
-                className="
-                  rounded-xl
-                  bg-white/10
-                  p-4
-                  flex
-                  flex-col
-                  sm:flex-row
-                  sm:items-center
-                  sm:justify-between
-                  gap-2
-                  hover:bg-white/15
-                  transition
-                "
-              >
-                {/* Service Info */}
-                <div className="flex flex-col gap-1">
-                  <div className="font-medium">{service.type}</div>
-                  <div className="text-sm opacity-70">{service.location}</div>
-                </div>
-
-                {/* Time */}
-                <div className="font-semibold whitespace-nowrap">
-                  {service.time}
-                </div>
+      <div className="md:w-2/3">
+        {SERVICES.map((services, servicesIndex) => (
+          <div
+            key={servicesIndex}
+            className="border-2 px-4 py-8 my-4 flex flex-row justify-between items-center"
+          >
+            <div className="flex flex-row items-start gap-4">
+              <Calendar color="#0066FF" />
+              <div className="flex flex-col gap-4">
+                <Heading children={services.day} size="2xl" />
+                <Subtitle
+                  children={`${services.day} at ${services.location} ${services.type}`}
+                />
               </div>
-            ))}
+            </div>
+            <div className="flex flex-row items-center gap-2">
+              <Clock color="gray" />
+              <Subtitle children={services.time} />
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

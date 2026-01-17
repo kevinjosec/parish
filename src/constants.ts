@@ -81,31 +81,30 @@ export const contacts = [
   },
 ];
 
-export const serviceSchedule = [
+export const SERVICES = [
   {
-    day: "Sunday",
-    services: [
-      {
-        location: "St Mary’s Church",
-        time: "8:00 AM",
-        type: "Holy Mass",
-      },
-      {
-        location: "St Joseph’s Hall",
-        time: "10:30 AM",
-        type: "Holy Mass",
-      },
-    ],
+    day: "Thursday",
+    location: "St Mary’s Church",
+    time: "8:00 AM",
+    type: "Holy Mass",
+  },
+  {
+    day: "Saturday",
+    location: "St Mary’s Church",
+    time: "6:30 PM",
+    type: "Holy Mass",
+  },
+  {
+    day: "Tuesday",
+    location: "St Mary’s Church",
+    time: "6:30 PM",
+    type: "Holy Mass",
   },
   {
     day: "Wednesday",
-    services: [
-      {
-        location: "St Mary’s Church",
-        time: "6:30 PM",
-        type: "Holy Mass",
-      },
-    ],
+    location: "St Mary’s Church",
+    time: "6:30 PM",
+    type: "Holy Mass",
   },
 ];
 
@@ -131,4 +130,10 @@ export const ABOUT_CONTENT = [
 export const ABOUT_FOOTER = {
   title: "Looking Forward",
   text: `As the parish continues to grow, St. Mary’s Jacobite Syrian Church remains committed to serving the spiritual needs of the faithful in Kuwait, preserving Orthodox traditions, and responding to the challenges of modern life with faith, compassion, and hope in Christ.`,
+};
+
+export const ROUTES = {
+  HOME: "/",
+  ABOUT: "/about",
+  COMMITTEE: "/committee",
 };
