@@ -19,7 +19,7 @@ export default function LocationsComponent() {
   const position: [number, number] = [29.284668, 48.079891];
 
   return (
-    <div className="p-4 md:flex md:flex-row gap-2">
+    <div className="p-4 md:flex md:flex-row gap-2 max-w-7xl mx-auto">
       <div className="md:w-1/3 md:flex md:justify-center md:py-6">
         <Heading children="Find Us" />
       </div>

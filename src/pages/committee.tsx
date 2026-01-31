@@ -46,7 +46,7 @@ export default function Committee() {
   return (
     <div>
       <NavbarComponent />
-      <section className="pt-32 pb-24 px-6 h-screen">
+      <section className="pt-32 pb-24 px-6 min-h-screen flex flex-col justify-center max-w-7xl mx-auto">
         <div className="overflow-hidden mb-8">
           <motion.h1
             initial="hidden"
@@ -95,22 +95,31 @@ export default function Committee() {
         </motion.p>
       </section>
 
-      <div className="flex flex-col gap-4 px-6">
+      <div className="flex flex-col gap-4 px-6 max-w-7xl mx-auto">
         <div className="uppercase ">
           <Subtitle
             children="Committee Members"
             className="text-[#0066FF] tracking-widest"
           />
         </div>
-        <div className="flex flex-col gap-6">
-          <Heading
-            children={COMMITTEE.YOUTH_ASSOSCIATION.NAME}
-            className="font-bold"
-            size="4xl"
-          />
-          <Subheading children={COMMITTEE.YOUTH_ASSOSCIATION.DESC} />
+        <div className="flex flex-col gap-12">
+          <div className="flex flex-col gap-6">
+            <Heading
+              children={COMMITTEE.YOUTH_ASSOSCIATION.NAME}
+              className="font-bold"
+              size="4xl"
+            />
+            <Subheading children={COMMITTEE.YOUTH_ASSOSCIATION.DESC} />
+          </div>
+          <div className="flex flex-col gap-6">
+            <Heading
+              children={COMMITTEE.VANITHA_SANGHAM.NAME}
+              className="font-bold"
+              size="4xl"
+            />
+            <Subheading children={COMMITTEE.VANITHA_SANGHAM.DESC} />
+          </div>
         </div>
-        <div></div>
       </div>
     </div>
   );

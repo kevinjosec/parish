@@ -4,7 +4,7 @@ import { Calendar, Clock } from "lucide-react";
 
 export default function TimingComponent() {
   return (
-    <div className="p-4 md:flex md:flex-row">
+    <div className="p-4 md:flex md:flex-row max-w-7xl mx-auto">
       <div className="md:w-1/3 md:flex md:justify-center">
         <Heading children="Service Schedule" />
       </div>

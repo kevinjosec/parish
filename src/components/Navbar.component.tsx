@@ -13,7 +13,7 @@ export default function NavbarComponent() {
     setOpenMenu(!openMenu);
   };
   return (
-    <div className="p-4 flex flex-row justify-between items-center">
+    <div className="p-4 flex flex-row w-full justify-between items-center">
       <LogoComponent />
       <div className="hidden md:flex flex-row items-start gap-6">
         {tabs.map((tab) => (

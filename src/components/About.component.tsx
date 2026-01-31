@@ -31,8 +31,8 @@ export default function AboutComponent() {
     },
   };
   return (
-    <div className="p-4 flex flex-col justify-center">
-      <div className="min-h-screen flex flex-col ">
+    <div className="p-4 flex flex-col justify-center max-w-7xl mx-auto">
+      <div className="min-h-screen max-w-7xl mx-auto flex flex-col justify-center">
         <div className="overflow-hidden mb-12">
           <motion.h1
             initial="hidden"
@@ -98,6 +98,7 @@ export default function AboutComponent() {
           </div>
         </motion.div>
       </div>
+      <Heading children="About Us" className="mb-8" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {ABOUT_CONTENT.map(({ title, text }) => (

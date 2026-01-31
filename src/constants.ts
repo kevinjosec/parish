@@ -44,7 +44,7 @@ export const ORGANIZATION_NAME = "St. Mary's Jacobite Syrian Church";
 export const COMMITTEE = {
   YOUTH_ASSOSCIATION: {
     NAME: "St. Mary's Jacobite Syrian Youth Association",
-    DESC: "Setting the strategic vision and steering the organization towards future growth.",
+    DESC: "The Male Youth Association is a faith-centered fellowship dedicated to nurturing the spiritual, personal, and leadership growth of young men within the church. Through prayer, study, service, and brotherhood, the association provides a supportive environment where members are encouraged to live out Christian values, develop responsibility, and actively contribute to the life and mission of the church and wider community.",
     PRESIDENT: "Mr. John Doe",
     VICE_PRESIDENT: "Mr. Richard Roe",
     SECRETARY: "Ms. Jane Smith",
@@ -53,7 +53,7 @@ export const COMMITTEE = {
   },
   VANITHA_SANGHAM: {
     NAME: "St. Mary's Jacobite Syrian Vanitha Sangham",
-    DESC: "Setting the strategic vision and steering the organization towards future growth.",
+    DESC: "The Female Youth Association is a vibrant community committed to the spiritual development, character formation, and fellowship of young women in the church. By fostering faith, service, and mutual encouragement, the association empowers members to grow in Christ, strengthen their sense of purpose, and play an active and meaningful role in both church activities and community outreach.",
     PRESIDENT: "Ms. Anna Johnson",
     VICE_PRESIDENT: "Ms. Laura Garcia",
     SECRETARY: "Ms. Maria Martinez",
@@ -70,13 +70,13 @@ export const contacts = [
   {
     id: "1",
     type: "Phone",
-    label: "Call us",
+    label: "Enquiry",
     value: "+965 9915 0614",
   },
   {
     id: "2",
     type: "Email",
-    label: "Email us",
+    label: "Email",
     value: "st.marysjsckuwait@yahoo.com",
   },
 ];

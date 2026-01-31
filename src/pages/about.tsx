@@ -46,7 +46,7 @@ export default function About() {
     <div>
       <NavbarComponent />
       <div className="p-4 min-h-screen flex flex-col justify-center">
-        <div className="overflow-hidden">
+        <div className="overflow-hidden max-w-7xl mx-auto">
           <motion.h1
             initial="hidden"
             animate="visible"
@@ -127,7 +127,7 @@ export default function About() {
         </motion.div> */}
       </div>
 
-      <section className="p-6">
+      <section className="p-6  max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
             <span className="block text-[#0066FF] tracking-widest uppercase mb-4">
