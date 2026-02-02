@@ -1,11 +1,11 @@
 import { Heading, Paragraph } from "@kevinjosec/typekit";
+import logo from "../../public/logo.png";
 
 export default function LogoComponent() {
   return (
     <div className="flex flex-row items-center gap-4">
-        <div className="rounded-full p-4 bg-blue-100">
-            <Paragraph children="SM" size="lg" className="font-bold text-blue-600" />
-        </div>
+      <img src={logo} alt="SMJSC Logo" className="w-16 h-16" />
+
       <div>
         <Heading children="ST MARY'S" size="xl" className="tracking-wider" />
         <Paragraph
